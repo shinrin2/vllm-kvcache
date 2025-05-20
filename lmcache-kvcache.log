@@ -1,0 +1,13 @@
+(llm-storage) yingh@yingh-Super-Server:~/Desktop/kvcache/vllm-kvcache/lmcache-ssd-example$ python query-twice.py
+Number of tokens in prompt: 238
+Querying vLLM server with cold LMCache Disk Offload
+Bash is a command-line interpreter that executes commands from standard input or a file, incorporating features from the Korn and C shells. It is designed to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+
+Cold TTFT: 9.484 seconds
+
+Querying vLLM server with warm LMCache Disk Offload
+Bash is a command language interpreter that executes commands read from standard input or a file, incorporating features from the Korn and C shells. It is         intended to be a conformant implementation of the IEEE POSIX specification, with the ability to be configured as POSIX-conformant by default.
+
+Warm TTFT: 13.923 seconds
+
+TTFT Improvement: -4.439 seconds     (0.7x faster)
