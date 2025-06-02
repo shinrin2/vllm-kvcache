@@ -1,5 +1,5 @@
 chunk_size: 256
 local_cpu: false
 max_local_cpu_size: 5.0
-local_disk: "file://local/disk_test/local_disk/"
+local_disk_path: "/media/yingh/samsung-data1"
 max_local_disk_size: 5.0

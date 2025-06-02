@@ -10,7 +10,7 @@ LMCACHE_CONFIG_FILE="disk-offload.yaml" \
 LMCACHE_USE_EXPERIMENTAL=True \
 vllm serve \
     meta-llama/Llama-3.1-8B-Instruct \
-    --max-model-len 8000 \
-    --cpu-offload-gb $CPU_OFFLOAD_GB \
+    --max-model-len 8192 \
+    # --cpu-offload-gb $CPU_OFFLOAD_GB \
     --kv-transfer-config  \
     '{"kv_connector":"LMCacheConnectorV1", "kv_role":"kv_both"}'

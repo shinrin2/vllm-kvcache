@@ -1,13 +1,49 @@
-(llm-storage) yingh@yingh-Super-Server:~/Desktop/kvcache/vllm-kvcache/lmcache-ssd-example$ python query-twice.py
+root@5869dab0b095:/vllm-workspace/lmcache-ssd-example# python3 query-twice.py 
 Number of tokens in prompt: 238
 Querying vLLM server with cold LMCache Disk Offload
-Bash is a command-line interpreter that executes commands from standard input or a file, incorporating features from the Korn and C shells. It is designed to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+Bash is a command language interpreter that executes commands from standard input or files, incorporating features from the Korn and C shells. It is intended to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
 
-Cold TTFT: 9.484 seconds
+Cold TTFT: 2.049 seconds
 
 Querying vLLM server with warm LMCache Disk Offload
-Bash is a command language interpreter that executes commands read from standard input or a file, incorporating features from the Korn and C shells. It is         intended to be a conformant implementation of the IEEE POSIX specification, with the ability to be configured as POSIX-conformant by default.
+Here's a summary of bash in 2 sentences:
 
-Warm TTFT: 13.923 seconds
+Bash is a command-line interpreter that executes commands from standard input or a file, incorporating features from other shells such as sh, ksh, and csh. It is intended to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
 
-TTFT Improvement: -4.439 seconds     (0.7x faster)
+Warm TTFT: 0.022 seconds
+
+TTFT Improvement: 2.026 seconds     (91.6x faster)
+root@5869dab0b095:/vllm-workspace/lmcache-ssd-example# python3 query-twice.py 
+Number of tokens in prompt: 238
+Querying vLLM server with cold LMCache Disk Offload
+Bash is a command-line interpreter that executes commands from standard input or files, incorporating features from the Korn and C shells. It is intended to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+
+Cold TTFT: 0.030 seconds
+
+Querying vLLM server with warm LMCache Disk Offload
+Bash is a command-line interpreter that executes commands from the standard input or a file, incorporating features from the Korn and C shells. It is intended to be a conformant implementation of the Shell and Utilities portion of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+
+Warm TTFT: 0.023 seconds
+
+TTFT Improvement: 0.007 seconds     (1.3x faster)
+root@5869dab0b095:/vllm-workspace/lmcache-ssd-example# python3 query-twice.py 
+Number of tokens in prompt: 238
+Querying vLLM server with cold LMCache Disk Offload
+Here's a 2-sentence summary of bash:
+
+Bash is a command language interpreter that executes commands from the standard input or a file, incorporating features from the Korn and C shells. It's intended to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+
+Cold TTFT: 0.037 seconds
+
+Querying vLLM server with warm LMCache Disk Offload
+Bash is a command language interpreter that executes commands from standard input or a file, incorporating features from sh, ksh, and csh shells. It aims to be a conformant implementation of the IEEE POSIX specification and can be configured to be POSIX-conformant by default.
+
+Warm TTFT: 0.024 seconds
+
+TTFT Improvement: 0.013 seconds     (1.5x faster)
+root@5869dab0b095:/vllm-workspace/lmcache-ssd-example# ^C
+root@5869dab0b095:/vllm-workspace/lmcache-ssd-example# 
+
+
+
+

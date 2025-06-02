@@ -2,6 +2,9 @@ import time
 from openai import OpenAI
 from transformers import AutoTokenizer
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),  # required by OpenAI client even for local servers
