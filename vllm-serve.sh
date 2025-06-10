@@ -13,4 +13,4 @@ vllm serve \
     --max-model-len 8192 \
     # --cpu-offload-gb $CPU_OFFLOAD_GB \
     --kv-transfer-config  \
-    '{"kv_connector":"LMCacheConnectorV1", "kv_role":"kv_both"}'
+    '{"kv_connector":"LMCacheConnectorV1", "kv_role":"kv_both"}'  > vllm-serve.log 2>&1

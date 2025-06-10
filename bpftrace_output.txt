@@ -1,0 +1,4 @@
+Kernel lockdown is enabled and set to 'confidentiality'. Lockdown mode blocks
+parts of BPF which makes it impossible for bpftrace to function. Please see 
+https://github.com/iovisor/bpftrace/blob/master/INSTALL.md#disable-lockdown
+for more details on lockdown and how to disable it.

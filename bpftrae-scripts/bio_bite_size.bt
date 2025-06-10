@@ -1,0 +1,7 @@
+// check major and minor: ls -l /dev/nvme0n1
+
+tracepoint:block:block_rq_issue
+/args->dev == ((259 << 20) | 3)/ // Match major=259, minor=3 for Samsung SSD 980 1TB
+{
+    printf("%llu, %s, %d, %llu, %d\n", nsecs, args->rwbs, args->bytes, args->sector, args->nr_sector);
+}
