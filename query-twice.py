@@ -20,10 +20,9 @@ long_context = ""
 with open("man-bash.txt", "r") as f:
     long_context = f.read()
 
-# a truncation of the long context for the --max-model-len 16384
-# if you increase the --max-model-len, you can decrease the truncation i.e.
-# use more of the long context
-long_context = long_context[:1000]
+# Use a much larger portion of the context to trigger disk offloading
+# The full context is 26054 tokens, let's use about 20k tokens
+long_context = long_context[:70000]  # This should be around 20k tokens
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct")
 question = "Summarize bash in 2 sentences."

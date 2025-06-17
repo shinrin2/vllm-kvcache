@@ -1,5 +1,5 @@
 chunk_size: 256
 local_cpu: false
 max_local_cpu_size: 5.0
-local_disk_path: '/samsung-data1/kvcache'
+local_disk: "/samsung-data1/kvcache"
 max_local_disk_size: 5.0
